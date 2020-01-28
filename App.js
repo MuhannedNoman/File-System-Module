@@ -83,9 +83,9 @@ const fs = require('fs');
 
 
 // *-- Add stuff to the file --*
-fs.appendFile('notExample.txt'," This is some other data",(error)=>{
-    if(error)
-    console.log(error);
-    else 
-    console.log("Added successfully");
-});
+// fs.appendFile('notExample.txt'," This is some other data",(error)=>{
+//     if(error)
+//     console.log(error);
+//     else 
+//     console.log("Added successfully");
+// });
