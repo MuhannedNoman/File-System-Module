@@ -91,9 +91,9 @@ const fs = require('fs');
 // });
 
 // *-- Delete the file --*
-fs.unlink('notExample.txt',(error)=>{
-    if(error)
-    console.log(error);
-    else 
-    console.log("Successfullt Delete the file!!");
-});
+// fs.unlink('notExample.txt',(error)=>{
+//     if(error)
+//     console.log(error);
+//     else 
+//     console.log("Successfullt Delete the file!!");
+// });
