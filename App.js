@@ -80,3 +80,12 @@ const fs = require('fs');
 //     else
 //     console.log("Renamed Successfuly");
 // });
+
+
+// *-- Add stuff to the file --*
+fs.appendFile('notExample.txt'," This is some other data",(error)=>{
+    if(error)
+    console.log(error);
+    else 
+    console.log("Added successfully");
+});
