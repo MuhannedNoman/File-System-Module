@@ -142,9 +142,18 @@ const fs = require('fs');
 //     }
 // });
 
-fs.readdir('example',(error,files)=>{
-    if(error)
-    console.log(error);
-    else
-    console.log(files);
-});
+// *-- Delete multiple files inside a directory --*
+// fs.readdir('example',(error,files)=>{
+//     if(error)
+//     console.log(error);
+//     else{
+//         for(let file of files){
+//             fs.unlink('./example/'+file,(error)=>{
+//                 if(error)
+//                 console.log(error);
+//                 else
+//                 console.log("Successfully deleted file");
+//             });
+//         }
+//     }
+// });
