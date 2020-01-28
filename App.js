@@ -107,9 +107,22 @@ const fs = require('fs');
 // });
 
 // *-- Delete a Directory --*
-fs.rmdir('example',(error)=>{
+// fs.rmdir('example',(error)=>{
+//     if(error)
+//     console.log(error);
+//     else 
+//     console.log("Successfully deleted the directory!!");
+// });
+
+fs.mkdir("example",(error)=>{
     if(error)
     console.log(error);
-    else 
-    console.log("Successfully deleted the directory!!");
+    else {
+        fs.writeFile("./example/example.txt","Some dummy text",(error)=>{
+            if(error)
+            console.log(error);
+            else
+            console.log("Created successfully");
+        });
+    }
 });
