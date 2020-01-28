@@ -97,3 +97,11 @@ const fs = require('fs');
 //     else 
 //     console.log("Successfullt Delete the file!!");
 // });
+
+// *-- Create a Directory --*
+fs.mkdir("example",(error)=>{
+    if(error)
+    console.log(error);
+    else 
+    console.log("Cirectory created successfully");
+});
