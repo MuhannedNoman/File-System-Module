@@ -141,3 +141,10 @@ const fs = require('fs');
 //         });
 //     }
 // });
+
+fs.readdir('example',(error,files)=>{
+    if(error)
+    console.log(error);
+    else
+    console.log(files);
+});
