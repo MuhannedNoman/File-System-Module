@@ -73,3 +73,11 @@ const fs = require('fs');
 //     }
 // });
 
+// *-- Change file name --*
+
+fs.rename('example.txt','notExample.txt',(error)=>{
+    if(error)
+    console.log(error);
+    else
+    console.log("Renamed Successfuly");
+})
