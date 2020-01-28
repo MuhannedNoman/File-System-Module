@@ -114,15 +114,30 @@ const fs = require('fs');
 //     console.log("Successfully deleted the directory!!");
 // });
 
-fs.mkdir("example",(error)=>{
+// *-- Create a file inside a directory --*
+// fs.mkdir("example",(error)=>{
+//     if(error)
+//     console.log(error);
+//     else {
+//         fs.writeFile("./example/example.txt","Some dummy text",(error)=>{
+//             if(error)
+//             console.log(error);
+//             else
+//             console.log("Created successfully");
+//         });
+//     }
+// });
+
+// *-- Delete a file inside a directory --*
+fs.unlink("./example/example.txt",(error)=>{
     if(error)
     console.log(error);
     else {
-        fs.writeFile("./example/example.txt","Some dummy text",(error)=>{
+        fs.rmdir("example",(error)=>{
             if(error)
             console.log(error);
             else
-            console.log("Created successfully");
+            console.log("Removed successfully");
         });
     }
 });
