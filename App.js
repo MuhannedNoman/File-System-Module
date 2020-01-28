@@ -63,7 +63,7 @@ fs.writeFile('example.txt',"This is an example",(error)=>{
     if(error) console.log(error);
     else {
         console.log("Created successfully");
-        fs.readFile('example.txt',(error,file)=>{
+        fs.readFile('example.txt','utf8',(error,file)=>{
             if(error){
                 console.log(error);
             } else {
