@@ -129,15 +129,15 @@ const fs = require('fs');
 // });
 
 // *-- Delete a file inside a directory --*
-fs.unlink("./example/example.txt",(error)=>{
-    if(error)
-    console.log(error);
-    else {
-        fs.rmdir("example",(error)=>{
-            if(error)
-            console.log(error);
-            else
-            console.log("Removed successfully");
-        });
-    }
-});
+// fs.unlink("./example/example.txt",(error)=>{
+//     if(error)
+//     console.log(error);
+//     else {
+//         fs.rmdir("example",(error)=>{
+//             if(error)
+//             console.log(error);
+//             else
+//             console.log("Removed successfully");
+//         });
+//     }
+// });
