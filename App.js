@@ -58,18 +58,18 @@
 
 const fs = require('fs');
 
-//Create a file
-fs.writeFile('example.txt',"This is an example",(error)=>{
-    if(error) console.log(error);
-    else {
-        console.log("Created successfully");
-        fs.readFile('example.txt','utf8',(error,file)=>{
-            if(error){
-                console.log(error);
-            } else {
-                console.log(file);
-            }
-        })
-    }
-});
+// *-- Create a file --*
+// fs.writeFile('example.txt',"This is an example",(error)=>{
+//     if(error) console.log(error);
+//     else {
+//         console.log("Created successfully");
+//         fs.readFile('example.txt','utf8',(error,file)=>{
+//             if(error){
+//                 console.log(error);
+//             } else {
+//                 console.log(file);
+//             }
+//         })
+//     }
+// });
 
