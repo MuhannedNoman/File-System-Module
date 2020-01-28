@@ -99,9 +99,17 @@ const fs = require('fs');
 // });
 
 // *-- Create a Directory --*
-fs.mkdir("example",(error)=>{
+// fs.mkdir("example",(error)=>{
+//     if(error)
+//     console.log(error);
+//     else 
+//     console.log("Directory created successfully");
+// });
+
+// *-- Delete a Directory --*
+fs.rmdir('example',(error)=>{
     if(error)
     console.log(error);
     else 
-    console.log("Cirectory created successfully");
+    console.log("Successfully deleted the directory!!");
 });
